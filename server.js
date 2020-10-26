@@ -146,7 +146,7 @@ app.get('/api/deals/private',authCheck, (req,res)=>{
         name: 'DJI Phantom 4',
         description: 'The Drone revolution is here. Take to the skies with the DJI Phantom 4.',
         originalPrice: 1299.99,
-        salePrice: 749.99
+        salePrice: 749.00
       },
       {
         id: 15900,
