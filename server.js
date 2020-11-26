@@ -14,18 +14,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-const  = jwt({
-  secret: jwks.expressJwtSecret({
-        cache: true,
-        rateLimit: true,
-        jwksRequestsPerMinute: 5,
-        jwksUri: "https://dev-797te40r.us.auth0.com/.well-known/jwks.json"
-    }),
-    // This is the identifier we set when we created the API
-    audience: 'http://localhost:3001',
-    issuer: "https://dev-797te40r.us.auth0.com/", // e.g., https://you.auth0.com/
-    algorithms: ['RS256']
-});
+// const  = jwt({
+//   secret: jwks.expressJwtSecret({
+//         cache: true,
+//         rateLimit: true,
+//         jwksRequestsPerMinute: 5,
+//         jwksUri: "https://dev-797te40r.us.auth0.com/.well-known/jwks.json"
+//     }),
+//     // This is the identifier we set when we created the API
+//     audience: 'http://localhost:3001',
+//     issuer: "https://dev-797te40r.us.auth0.com/", // e.g., https://you.auth0.com/
+//     algorithms: ['RS256']
+// });
 // Public route
 app.get('/api/data/cuttack', (req, res)=>{
   let deals = [
