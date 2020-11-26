@@ -27,160 +27,1521 @@ const authCheck = jwt({
     algorithms: ['RS256']
 });
 // Public route
-app.get('/api/deals/public', (req, res)=>{
+app.get('/api/data/cuttack', (req, res)=>{
   let deals = [
     {
-        id: 12231,
-        image:'/assets/neemcapsule.png',
-        name: 'Neem capsule',
-        description: 'The Playstation 4 is the next gen console to own. With the best games and online experience.',
-        originalPrice: 249,
-        salePrice: 299.99,
-        leftitem: 2,
+        id: 1,
+        
       },
       {
-        id: 12236,
-        image:'/assets/kajal.png',
-        name: 'Make up black kajal',
-        description: 'The Note 7 has been fixed and will no longer explode. Get it an amazing price!',
-        originalPrice: 175.00,
-        salePrice: 499.99,
-        leftitem: 5,
+        id: 2,
+       
       },
       {
-        id: 12245,
-        image:'/assets/macbook.jpg',
-        name: 'Tulsi power',
-        description: 'The Macbook Pro is the de-facto standard for best in breed mobile computing.',
-        originalPrice: 265.00,
-        salePrice: 1999.99,
-        leftitem: 7,
+        id: 2,
+        
       },
       {
-        id: 12267,
-        image:'/assets/tulsipowder1.png',
-        name: 'Tulsi power',
-        description: 'Turn your home into a smart home with Amazon Echo. Just say the word and Echo will do it.',
-        originalPrice: 265.00,
-        salePrice: 129.99,
-        leftitem: 5,
+        id: 4,
+       
       },
       {
-        id: 12288,
-        image:'/assets/fat.png',
-        name: 'Oreslim powder-200gms',
-        description: 'The Nest Outdoor camera records and keeps track of events outside your home 24/7.',
-        originalPrice: 749.00,
-        salePrice: 149.99,
-        leftitem: 15,
+        id: 5,
+       
       },
       {
-        id: 12290,
-        image:'/assets/paindomplus.png',
-        name: 'Paindon plus capsules-120caps',
-        description: 'Record yourself in first person 24/7 with the GoPro 4. Show everyone how exciting your life is.',
-        originalPrice: 525.00,
-        salePrice: 199.99,
-        leftitem: 7,
+        id: 6,
+      
       }, {
-    id: 12231,
-    image:'/assets/paindomplus.png',
-    name: 'Paindon plus capsules-30caps',
-    description: 'The Playstation 4 is the next gen console to own. With the best games and online experience.',
-    originalPrice: 190.00,
-    salePrice: 299.99,
-    leftitem: 22,
+    id: 7,
+   
   },
   {
-    id: 12237,
-    image:'/assets/Tulsipowder2.png',
-    name: 'Tulsi power-20ml',
-    description: 'The Note 7 has been fixed and will no longer explode. Get it an amazing price!',
-    originalPrice: 265.00,
-    salePrice: 499.99,
-    leftitem: 2,
+    id: 8,
+    
   },
   {
-    id: 12225,
-    image:'/assets/nutroncapsule.png',
-    name: 'Nutroton capsule-60caps',
-    description: 'The Macbook Pro is the de-facto standard for best in breed mobile computing.',
-    originalPrice: 625.00,
-    salePrice: 1999.99,
-    leftitem: 6,
+    id: 9,
+    
   },
   {
-    id: 12278,
-    image:'/assets/vigvitcapsule.png',
-    name: 'Vigvit capsule-60caps',
-    description: 'Turn your home into a smart home with Amazon Echo. Just say the word and Echo will do it.',
-    originalPrice: 625.00,
-    salePrice: 129.99,
-    leftitem: 15,
+    id: 10,
+    
   },
   {
-    id: 12288,
-    image:'/assets/nest.jpg',
-    name: 'Oregon-80, for agriculture aid-500ml',
-    description: 'The Nest Outdoor camera records and keeps track of events outside your home 24/7.',
-    originalPrice: 550.00,
-    salePrice: 149.99,
-    leftitem: 12,
+    id: 11,
+    
   },
+  {
+id: 12,
+        
+},
+{
+  id: 13,
+ 
+},
+{
+  id: 14,
+  
+},
+{
+  id: 15,
+ 
+},
+{
+  id: 16,
+ 
+},
+{
+  id:17,
+
+}, {
+id: 18,
+
+},
+{
+id: 19,
+
+},
+{
+id: 20,
+
+},
+{
+id: 21,
+
+},
+{
+id: 22,
+
+},
+{
+id: 23,
+        
+},
+{
+  id: 24,
+ 
+},
+{
+  id: 25,
+  
+},
+{
+  id: 26,
+ 
+},
+{
+  id: 27,
+ 
+},
+{
+  id: 28,
+
+}, {
+id: 29,
+
+},
+{
+id: 30,
+
+},
+{
+id: 31,
+
+},
+{
+id: 32,
+
+},
+{
+id: 33,
+
+},
+{
+id: 34,
+        
+},
+{
+  id: 35,
+ 
+},
+{
+  id: 36,
+  
+},
+{
+  id: 37 ,
+ 
+},
+{
+  id: 38,
+ 
+},
+{
+  id: 39,
+
+}, {
+id: 40,
+
+},
+{
+id: 41,
+
+},
+{
+id: 42,
+
+},
+{
+id: 43,
+
+},
+{
+id: 44,
+
+},
+{
+id: 45,
+        
+},
+{
+  id: 46,
+ 
+},
+{
+  id: 47,
+  
+},
+{
+  id: 48,
+ 
+},
+{
+  id: 49,
+ 
+},
+{
+  id: 50,
+
+}, {
+id: 51,
+
+},
+{
+id: 52,
+
+},
+{
+id: 53,
+
+},
+{
+id: 54,
+
+},
+{
+id: 55,
+
+},
+{
+id: 56,
+        
+},
+{
+  id: 57,
+ 
+},
+{
+  id: 58,
+  
+},
+{
+  id: 60,
+ 
+},
+{
+  id: 61,
+ 
+},
+{
+  id: 62,
+
+}, {
+id: 63,
+
+},
+{
+id: 64,
+
+},
+{
+id: 65,
+
+},
+{
+id: 66,
+
+},
+{
+id: 67,
+
+},
+{
+id: 68,
+        
+},
+{
+  id: 69,
+ 
+},
+{
+  id: 70,
+  
+},
+{
+  id: 71,
+ 
+},
+{
+  id: 72,
+ 
+},
+{
+  id: 73,
+
+}, {
+id: 74,
+
+},
+{
+id: 75,
+
+},
+{
+id: 76,
+
+},
+{
+id: 77,
+
+},
+{
+id: 78,
+
+},
+{
+id: 79,
+        
+},
+{
+  id: 80,
+ 
+},
+{
+  id: 81,
+  
+},
+{
+  id: 82,
+ 
+},
+{
+  id: 83,
+ 
+},
+{
+  id: 84,
+
+}, {
+id: 85,
+
+},
+{
+id: 86,
+
+},
+{
+id: 87,
+
+},
+{
+id: 88,
+
+},
+{
+id: 89,
+
+},
+{
+id: 90,
+        
+},
+{
+  id: 91,
+ 
+},
+{
+  id: 92,
+  
+},
+{
+  id: 93,
+ 
+},
+{
+  id: 94,
+ 
+},
+{
+  id: 95,
+
+}, {
+id: 96,
+
+},
+{
+id: 97,
+
+},
+{
+id: 98,
+
+},
+{
+id: 99,
+
+},
+{
+id: 100,
+
+},
  
   ];
   res.json(deals);
 })
 
 // Private route
-app.get('/api/deals/private',authCheck, (req,res)=>{
+app.get('/api/data/anugul',authCheck, (req,res)=>{
   let deals = [
     {
-        id: 14423,
-        name: 'Tesla S',
-        description: 'Ride in style and say goodbye to paying for gas. The Tesla S is the car of the future.',
-        originalPrice: 90000.00,
-        salePrice: 75000.00
-      },
-      {
-        id: 14553,
-        name: 'DJI Phantom 4',
-        description: 'The Drone revolution is here. Take to the skies with the DJI Phantom 4.',
-        originalPrice: 1299.99,
-        salePrice: 749.00
-      },
-      {
-        id: 15900,
-        name: 'iPhone 7 - Jet Black',
-        description: 'Get the latest and greatest iPhone in the limited edition jet black.',
-        originalPrice: 899.99,
-        salePrice: 799.99
-      },
-      {
-        id: 16000,
-        name: '70" Samsung 4K HDR TV',
-        description: 'Watch as if you were there with the latest innovations including 4K and HDR.',
-        originalPrice: 2999.99,
-        salePrice: 2499.99
-      },
-      {
-        id: 17423,
-        name: 'Canon t8i DSLR',
-        description: 'Capture life\'s moments with the amazing Canon t8i DSLR',
-        originalPrice: 999.99,
-        salePrice: 549.99
-      },
-      {
-        id: 17423,
-        name: 'Xbox One S',
-        description: 'Get the latest Xbox and play the best first party games including Gears of War and Forza.',
-        originalPrice: 299.99,
-        salePrice: 279.99
-      },
+      id: 1,
+      
+    },
+    {
+      id: 2,
+     
+    },
+    {
+      id: 2,
+      
+    },
+    {
+      id: 4,
+     
+    },
+    {
+      id: 5,
+     
+    },
+    {
+      id: 6,
+    
+    }, {
+  id: 7,
+ 
+},
+{
+  id: 8,
+  
+},
+{
+  id: 9,
+  
+},
+{
+  id: 10,
+  
+},
+{
+  id: 11,
+  
+},
+{
+id: 12,
+      
+},
+{
+id: 13,
+
+},
+{
+id: 14,
+
+},
+{
+id: 15,
+
+},
+{
+id: 16,
+
+},
+{
+id:17,
+
+}, {
+id: 18,
+
+},
+{
+id: 19,
+
+},
+{
+id: 20,
+
+},
+{
+id: 21,
+
+},
+{
+id: 22,
+
+},
+{
+id: 23,
+      
+},
+{
+id: 24,
+
+},
+{
+id: 25,
+
+},
+{
+id: 26,
+
+},
+{
+id: 27,
+
+},
+{
+id: 28,
+
+}, {
+id: 29,
+
+},
+{
+id: 30,
+
+},
+{
+id: 31,
+
+},
+{
+id: 32,
+
+},
+{
+id: 33,
+
+},
+{
+id: 34,
+      
+},
+{
+id: 35,
+
+},
+{
+id: 36,
+
+},
+{
+id: 37 ,
+
+},
+{
+id: 38,
+
+},
+{
+id: 39,
+
+}, {
+id: 40,
+
+},
+{
+id: 41,
+
+},
+{
+id: 42,
+
+},
+{
+id: 43,
+
+},
+{
+id: 44,
+
+},
+{
+id: 45,
+      
+},
+{
+id: 46,
+
+},
+{
+id: 47,
+
+},
+{
+id: 48,
+
+},
+{
+id: 49,
+
+},
+{
+id: 50,
+
+}, {
+id: 51,
+
+},
+{
+id: 52,
+
+},
+{
+id: 53,
+
+},
+{
+id: 54,
+
+},
+{
+id: 55,
+
+},
+{
+id: 56,
+      
+},
+{
+id: 57,
+
+},
+{
+id: 58,
+
+},
+{
+id: 60,
+
+},
+{
+id: 61,
+
+},
+{
+id: 62,
+
+}, {
+id: 63,
+
+},
+{
+id: 64,
+
+},
+{
+id: 65,
+
+},
+{
+id: 66,
+
+},
+{
+id: 67,
+
+},
+{
+id: 68,
+      
+},
+{
+id: 69,
+
+},
+{
+id: 70,
+
+},
+{
+id: 71,
+
+},
+{
+id: 72,
+
+},
+{
+id: 73,
+
+}, {
+id: 74,
+
+},
+{
+id: 75,
+
+},
+{
+id: 76,
+
+},
+{
+id: 77,
+
+},
+{
+id: 78,
+
+},
+{
+id: 79,
+      
+},
+
+  ];
+  res.json(deals);
+})
+app.get('/api/deals/khorda',authCheck, (req,res)=>{
+  let deals = [
+    {
+      id: 1,
+      
+    },
+    {
+      id: 2,
+     
+    },
+    {
+      id: 2,
+      
+    },
+    {
+      id: 4,
+     
+    },
+    {
+      id: 5,
+     
+    },
+    {
+      id: 6,
+    
+    }, {
+  id: 7,
+ 
+},
+{
+  id: 8,
+  
+},
+{
+  id: 9,
+  
+},
+{
+  id: 10,
+  
+},
+{
+  id: 11,
+  
+},
+{
+id: 12,
+      
+},
+{
+id: 13,
+
+},
+{
+id: 14,
+
+},
+{
+id: 15,
+
+},
+{
+id: 16,
+
+},
+{
+id:17,
+
+}, {
+id: 18,
+
+},
+{
+id: 19,
+
+},
+{
+id: 20,
+
+},
+{
+id: 21,
+
+},
+{
+id: 22,
+
+},
+{
+id: 23,
+      
+},
+{
+id: 24,
+
+},
+{
+id: 25,
+
+},
+{
+id: 26,
+
+},
+{
+id: 27,
+
+},
+{
+id: 28,
+
+}, {
+id: 29,
+
+},
+{
+id: 30,
+
+},
+{
+id: 31,
+
+},
+{
+id: 32,
+
+},
+{
+id: 33,
+
+},
+{
+id: 34,
+      
+},
+{
+id: 35,
+
+},
+{
+id: 36,
+
+},
+{
+id: 37 ,
+
+},
+{
+id: 38,
+
+},
+{
+id: 39,
+
+}, {
+id: 40,
+
+},
+{
+id: 41,
+
+},
+{
+id: 42,
+
+},
+{
+id: 43,
+
+},
+{
+id: 44,
+
+},
+{
+id: 45,
+      
+},
+{
+id: 46,
+
+},
+{
+id: 47,
+
+},
+
+
+  ];
+  res.json(deals);
+})
+app.get('/api/data/sambalpur',authCheck, (req,res)=>{
+  let deals = [
+    {
+      id: 1,
+      
+    },
+    {
+      id: 2,
+     
+    },
+    {
+      id: 2,
+      
+    },
+    {
+      id: 4,
+     
+    },
+    {
+      id: 5,
+     
+    },
+    {
+      id: 6,
+    
+    }, {
+  id: 7,
+ 
+},
+{
+  id: 8,
+  
+},
+{
+  id: 9,
+  
+},
+{
+  id: 10,
+  
+},
+{
+  id: 11,
+  
+},
+{
+id: 12,
+      
+},
+{
+id: 13,
+
+},
+{
+id: 14,
+
+},
+{
+id: 15,
+
+},
+{
+id: 16,
+
+},
+{
+id:17,
+
+}, {
+id: 18,
+
+},
+{
+id: 19,
+
+},
+{
+id: 20,
+
+},
+{
+id: 21,
+
+},
+{
+id: 22,
+
+},
+{
+id: 23,
+      
+},
+{
+id: 24,
+
+},
+{
+id: 25,
+
+},
+{
+id: 26,
+
+},
+{
+id: 27,
+
+},
+{
+id: 28,
+
+}, {
+id: 29,
+
+},
+{
+id: 30,
+
+},
+{
+id: 31,
+
+},
+{
+id: 32,
+
+},
+{
+id: 33,
+
+},
+{
+id: 34,
+      
+},
+
+
+  ];
+  res.json(deals);
+})
+app.get('/api/data/Baripada',authCheck, (req,res)=>{
+  let deals = [
+    {
+      id: 1,
+      
+    },
+    {
+      id: 2,
+     
+    },
+    {
+      id: 2,
+      
+    },
+    {
+      id: 4,
+     
+    },
+    {
+      id: 5,
+     
+    },
+    {
+      id: 6,
+    
+    }, {
+  id: 7,
+ 
+},
+{
+  id: 8,
+  
+},
+{
+  id: 9,
+  
+},
+{
+  id: 10,
+  
+},
+{
+  id: 11,
+  
+},
+{
+id: 12,
+      
+},
+{
+id: 13,
+
+},
+{
+id: 14,
+
+},
+{
+id: 15,
+
+},
+{
+id: 16,
+
+},
+{
+id:17,
+
+}, {
+id: 18,
+
+},
+{
+id: 19,
+
+},
+{
+id: 20,
+
+},
+{
+id: 21,
+
+},
+{
+id: 22,
+
+},
+{
+id: 23,
+      
+},
+{
+id: 24,
+
+},
+{
+id: 25,
+
+},
+{
+id: 26,
+
+},
+{
+id: 27,
+
+},
+{
+id: 28,
+
+}, {
+id: 29,
+
+},
+{
+id: 30,
+
+},
+{
+id: 31,
+
+},
+{
+id: 32,
+
+},
+{
+id: 33,
+
+},
+{
+id: 34,
+      
+},
+{
+id: 35,
+
+},
+{
+id: 36,
+
+},
+{
+id: 37 ,
+
+},
+{
+id: 38,
+
+},
+{
+id: 39,
+
+}, {
+id: 40,
+
+},
+{
+id: 41,
+
+},
+{
+id: 42,
+
+},
+{
+id: 43,
+
+},
+{
+id: 44,
+
+},
+{
+id: 45,
+      
+},
+{
+id: 46,
+
+},
+{
+id: 47,
+
+},
+{
+id: 48,
+
+},
+{
+id: 49,
+
+},
+{
+id: 50,
+
+}, {
+id: 51,
+
+},
+{
+id: 52,
+
+},
+{
+id: 53,
+
+},
+{
+id: 54,
+
+},
+{
+id: 55,
+
+},
+{
+id: 56,
+      
+},
+{
+id: 57,
+
+},
+{
+id: 58,
+
+},
+{
+id: 60,
+
+},
+{
+id: 61,
+
+},
+{
+id: 62,
+
+}, {
+id: 63,
+
+},
+{
+id: 64,
+
+},
+{
+id: 65,
+
+},
+{
+id: 66,
+
+},
+{
+id: 67,
+
+},
+{
+id: 68,
+      
+},
+{
+id: 69,
+
+},
+{
+id: 70,
+
+},
+app.get('/api/data/maurbhanj',authCheck, (req,res)=>{
+  let deals = [
+    {
+      id: 1,
+      
+    },
+    {
+      id: 2,
+     
+    },
+    {
+      id: 2,
+      
+    },
+    {
+      id: 4,
+     
+    },
+    {
+      id: 5,
+     
+    },
+    {
+      id: 6,
+    
+    }, {
+  id: 7,
+ 
+},
+{
+  id: 8,
+  
+},
+{
+  id: 9,
+  
+},
+{
+  id: 10,
+  
+},
+{
+  id: 11,
+  
+},
+{
+id: 12,
+      
+},
+{
+id: 13,
+
+},
+{
+id: 14,
+
+},
+{
+id: 15,
+
+},
+{
+id: 16,
+
+},
+{
+id:17,
+
+}, {
+id: 18,
+
+},
+{
+id: 19,
+
+},
+{
+id: 20,
+
+},
+{
+id: 21,
+
+},
+{
+id: 22,
+
+},
+{
+id: 23,
+      
+},
+{
+id: 24,
+
+},
+{
+id: 25,
+
+},
+{
+id: 26,
+
+},
+{
+id: 27,
+
+},
+{
+id: 28,
+
+}, {
+id: 29,
+
+},
+{
+id: 30,
+
+},
+{
+id: 31,
+
+},
+{
+id: 32,
+
+},
+{
+id: 33,
+
+},
+{
+id: 34,
+      
+},
+{
+id: 35,
+
+},
+{
+id: 36,
+
+},
+{
+id: 37 ,
+
+},
+{
+id: 38,
+
+},
+{
+id: 39,
+
+}, {
+id: 40,
+
+},
+{
+id: 41,
+
+},
+{
+id: 42,
+
+},
+{
+id: 43,
+
+},
+{
+id: 44,
+
+},
+{
+id: 45,
+      
+},
+{
+id: 46,
+
+},
+{
+id: 47,
+
+},
+{
+id: 48,
+
+},
+{
+id: 49,
+
+},
+{
+id: 50,
+
+}, 
+
   ];
   res.json(deals);
 })
 
+  ];
+  res.json(deals);
+})
 app.listen(port, host, function() {
   console.log("Server started.......");
 });
