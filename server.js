@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-const authCheck = jwt({
+const  = jwt({
   secret: jwks.expressJwtSecret({
         cache: true,
         rateLimit: true,
@@ -422,7 +422,7 @@ id: 100,
 })
 
 // Private route
-app.get('/api/data/anugul',authCheck, (req,res)=>{
+app.get('/api/data/anugul', (req,res)=>{
   let deals = [
     {
       id: 1,
@@ -733,7 +733,7 @@ id: 79,
   ];
   res.json(deals);
 })
-app.get('/api/deals/khorda',authCheck, (req,res)=>{
+app.get('/api/deals/khorda', (req,res)=>{
   let deals = [
     {
       id: 1,
@@ -924,7 +924,7 @@ id: 47,
   ];
   res.json(deals);
 })
-app.get('/api/data/sambalpur',authCheck, (req,res)=>{
+app.get('/api/data/sambalpur', (req,res)=>{
   let deals = [
     {
       id: 1,
@@ -1064,7 +1064,7 @@ id: 34,
   ];
   res.json(deals);
 })
-app.get('/api/data/Baripada',authCheck, (req,res)=>{
+app.get('/api/data/Baripada', (req,res)=>{
   let deals = [
     {
       id: 1,
@@ -1336,7 +1336,7 @@ id: 69,
 id: 70,
 
 },
-app.get('/api/data/maurbhanj',authCheck, (req,res)=>{
+app.get('/api/data/maurbhanj',(req,res)=>{
   let deals = [
     {
       id: 1,
